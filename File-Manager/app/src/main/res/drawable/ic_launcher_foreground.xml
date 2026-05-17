@@ -1,0 +1,27 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Folder base -->
+    <path
+        android:fillColor="#FFC107"
+        android:pathData="M10,30 L98,30 L98,85 C98,90 93,95 87,95 L21,95 C15,95 10,90 10,85 Z" />
+
+    <!-- Folder tab -->
+    <path
+        android:fillColor="#FFB300"
+        android:pathData="M10,20 L40,20 L50,30 L10,30 Z" />
+
+    <!-- Document inside folder -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M40,40 L75,40 L75,80 L40,80 Z" />
+
+    <!-- Document lines -->
+    <path
+        android:strokeColor="#CCCCCC"
+        android:strokeWidth="3"
+        android:pathData="M45,50 L70,50 M45,60 L70,60 M45,70 L70,70" />
+</vector>
