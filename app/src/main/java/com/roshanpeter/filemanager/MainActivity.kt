@@ -78,13 +78,14 @@ private fun hasAllFilesPermission(context: Context): Boolean {
     }
 }
 
+@RequiresApi(Build.VERSION_CODES.R)
 private fun showPermissionDialog(activity: Activity) {
     AlertDialog.Builder(activity)
         .setTitle("Permission Required")
         .setMessage("To explore all files, please allow 'All Files Access' in settings.")
         .setPositiveButton("Allow") { _, _ ->
             val intent = Intent(Settings.ACTION_MANAGE_APP_ALL_FILES_ACCESS_PERMISSION).apply {
-                data = Uri.parse("package:${activity.packageName}")
+                data = "package:${activity.packageName}".toUri()
             }
             activity.startActivity(intent)
         }
